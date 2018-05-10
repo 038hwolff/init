@@ -1,0 +1,1 @@
+Les clés autorisées à se connecter via ssh se trouvent aux chemins ~/.ssh/id_rsa.pub pour la clé publique et ~/.ssh_rsa pour la clé privée 
