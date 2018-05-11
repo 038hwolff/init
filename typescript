@@ -1,0 +1,87 @@
+Le script a débuté sur ven. 11 mai 2018 21:16:57 CEST
+root@debian:/home/helenew/init# ls
+network  README.md  scripts  system  typescript
+root@debian:/home/helenew/init# cd scripts
+root@debian:/home/helenew/init/scripts# ls
+05
+root@debian:/home/helenew/init/scripts# echo #!/bin/sh > 01 02 03 04
+
+root@debian:/home/helenew/init/scripts# ls
+05
+root@debian:/home/helenew/init/scripts# lsecho #!/bin/sh > 01 02 03 04[K[K[K[K[K[K[K[K[K
+
+root@debian:/home/helenew/init/scripts# ls
+05
+root@debian:/home/helenew/init/scripts# vi 01
+[?1049h[?1h=[1;37r[?12;25h[?12l[?25h[27m[23m[m[H[2J[?25l[37;1H"01" [New File][2;1H[94m~                                                                                                               [3;1H~                                                                                                               [4;1H~                                                                                                               [5;1H~                                                                                                               [6;1H~                                                                                                               [7;1H~                                                                                                               [8;1H~                                                                                                               [9;1H~                                                                                                               [10;1H~                                                                                                               [11;1H~                                                                                                               [12;1H~                                                                                                               [13;1H~                                                                                                               [14;1H~                                                                                                               [15;1H~                                                                                                               [16;1H~                                                                                                               [17;1H~                                                                                                               [18;1H~                                                                                                               [19;1H~                                                                                                               [20;1H~                                                                                                               [21;1H~                                                                                                               [22;1H~                                                                                                               [23;1H~                                                                                                               [24;1H~                                                                                                               [25;1H~                                                                                                               [26;1H~                                                                                                               [27;1H~                                                                                                               [28;1H~                                                                                                               [29;1H~                                                                                                               [30;1H~                                                                                                               [31;1H~                                                                                                               [32;1H~                                                                                                               [33;1H~                                                                                                               [34;1H~                                                                                                               [35;1H~                                                                                                               [36;1H~                                                                                                               [1;1H[?12l[?25h[?25l[m#[?12l[?25h[?25l![?12l[?25h[?25l/[?12l[?25h[?25lb[?12l[?25h[?25li[?12l[?25h[?25ln[?12l[?25h[?25l/[?12l[?25h[?25ls[?12l[?25h[?25lh[?12l[?25h[?25l[37;1H[K[37;1H:[?12l[?25hwq[?25l"01" [New File] 1 line, 10 characters written
+[?1l>[?12l[?25h[?1049lroot@debian:/home/helenew/init/scripts# cp 01 02
+root@debian:/home/helenew/init/scripts# ls
+01  02	05
+root@debian:/home/helenew/init/scripts# cp 02 30[K[K03
+root@debian:/home/helenew/init/scripts# cp 03 04
+root@debian:/home/helenew/init/scripts# ct[Kar[Kt 04
+#!/bin/sh
+root@debian:/home/helenew/init/scripts# ls -la
+total 28
+drwxr-xr-x 2 root root 4096 mai   11 21:18 .
+drwxr-xr-x 6 root root 4096 mai   11 21:16 ..
+-rw-r--r-- 1 root root   10 mai   11 21:18 01
+-rw-r--r-- 1 root root   10 mai   11 21:18 02
+-rw-r--r-- 1 root root   10 mai   11 21:18 03
+-rw-r--r-- 1 root root   10 mai   11 21:18 04
+-rw-r--r-- 1 root root    8 mai   10 19:50 05
+root@debian:/home/helenew/init/scripts# git add *
+root@debian:/home/helenew/init/scripts# git commit -m "premier push à check"
+[master ae0ba99] premier push à check
+ Committer: root <root@debian.hwolff.com>
+Votre nom et votre adresse e-mail ont été configurés automatiquement en se
+fondant sur votre nom d'utilisateur et le nom de votre machine. Veuillez 
+vérifier qu'ils sont corrects. Vous pouvez supprimer ce message en les 
+paramétrant explicitement. Lancez les commandes suivantes et suivez les
+instruction dans votre éditeur pour éditer votre fichier de configuration :
+
+    git config --global --edit
+
+Après ceci, vous pouvez corriger l'identité utilisée pour cette validation avec :
+
+    git commit --amend --reset-author
+
+ 4 files changed, 4 insertions(+)
+ create mode 100644 scripts/01
+ create mode 100644 scripts/02
+ create mode 100644 scripts/03
+ create mode 100644 scripts/04
+root@debian:/home/helenew/init/scripts# git push
+Username for 'https://github.com': 038hwolff	* 
+Password for 'https://038hwolff@github.com': 
+To https://github.com/038hwolff/init.git
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/038hwolff/init.git'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+root@debian:/home/helenew/init/scripts# git checkout
+Votre branche est en avance sur 'origin/master' de 2 commits.
+  (utilisez "git push" pour publier vos commits locaux)
+root@debian:/home/helenew/init/scripts# git push
+Username for 'https://github.com': 038hwolff
+Password for 'https://038hwolff@github.com': 
+To https://github.com/038hwolff/init.git
+ ! [rejected]        master -> master (fetch first)
+error: impossible de pousser des références vers 'https://github.com/038hwolff/init.git'
+astuce: Les mises à jour ont été rejetées car la branche distante contient du travail que
+astuce: vous n'avez pas en local. Ceci est généralement causé par un autre dépôt poussé
+astuce: vers la même référence. Vous pourriez intégrer d'abord les changements distants
+astuce: (par exemple 'git pull ...') avant de pousser à nouveau.
+astuce: Voir la 'Note à propos des avances rapides' dans 'git push --help' pour plus d'information.
+root@debian:/home/helenew/init/scripts# cd ..
+root@debian:/home/helenew/init# git pull
+remote: Counting objects: 11, done.[K
+remote: Compressing objects:  11% (1/9)   [Kremote: Compressing objects:  22% (2/9)   [Kremote: Compressing objects:  33% (3/9)   [Kremote: Compressing objects:  44% (4/9)   [Kremote: Compressing objects:  55% (5/9)   [Kremote: Compressing objects:  66% (6/9)   [Kremote: Compressing objects:  77% (7/9)   [Kremote: Compressing objects:  88% (8/9)   [Kremote: Compressing objects: 100% (9/9)   [Kremote: Compressing objects: 100% (9/9), done.[K
+remote: Total 11 (delta 4), reused 0 (delta 0), pack-reused 0[K
+Dépaquetage des objets:   9% (1/11)   Dépaquetage des objets:  18% (2/11)   Dépaquetage des objets:  27% (3/11)   Dépaquetage des objets:  36% (4/11)   Dépaquetage des objets:  45% (5/11)   Dépaquetage des objets:  54% (6/11)   Dépaquetage des objets:  63% (7/11)   Dépaquetage des objets:  72% (8/11)   Dépaquetage des objets:  81% (9/11)   Dépaquetage des objets:  90% (10/11)   Dépaquetage des objets: 100% (11/11)   Dépaquetage des objets: 100% (11/11), fait.
+Depuis https://github.com/038hwolff/init
+   be90db8..b2187dc  master     -> origin/master
+[?1049h[1;37r(B[m[4l[?7h[?1h=[?1h=[?1h=[39;49m[?25l[39;49m(B[m[H[2J[35;46H(B[0;7m[ Lecture du fichier ](B[m[35;45H(B[0;7m[ Lecture de 7 lignes ](B[m[H[39;49m(B[0;7m  GNU nano 2.7.4                      Fichier : /home/helenew/init/.git/MERGE_MSG                               [3;1H(B[mMerge branch 'master' of https://github.com/038hwolff/init[5d# Veuillez entrer un message de validation pour expliquer en quoi cette fusion est[6d# nécessaire, surtout si cela fusionne une branche amont mise à jour dans une branche de sujet.[7d#[8d# Les lignes commençant par '#' seront ignorées, et un message vide[9d# abandonne la validation.[36d(B[0;7m^G(B[m Aide[36;17H(B[0;7m^O(B[m Écrire[33G(B[0;7m^W(B[m Chercher     (B[0;7m^K(B[m Couper[65G(B[0;7m^J(B[m Justifier    (B[0;7m^C(B[m Pos. cur.    (B[0;7m^Y(B[m Page préc.[37d(B[0;7m^X(B[m Quitter[17G(B[0;7m^R(B[m Lire fich.   (B[0;7m^\(B[m Remplacer    (B[0;7m^U(B[m Coller[65G(B[0;7m^T(B[m Orthograp.   (B[0;7m^_(B[m Aller lig.   (B[0;7m^V(B[m Page suiv.[35d[?12l[?25h[3d[2;34r[2;1HM[1;37r[1;104H(B[0;7mModifié[4d(B[m[Amise a jour pour commit[35d(B[0;7mÉcrire l'espace modifié ? (Répondre « Non » ABANDONNE les modifications.)                                       [36;1H O(B[m Oui[K[37d(B[0;7m N(B[m Non    [18G(B[0;7mC(B[m Annuler[K[35;74H[36d(B[0;7m^G(B[m Aide[36;29H(B[0;7mM-D(B[m Format DOS[36;57H(B[0;7mM-A(B[m Ajout (à la fin)[36;85H(B[0;7mM-B(B[m Copie de sécu.[37d(B[0;7m^C(B[m Annuler[17G            (B[0;7mM-M(B[m Format Mac[37;57H(B[0;7mM-P(B[m Ajout (au début)[37;85H(B[0;7m^T(B[m Parcourir[35d(B[0;7mNom du fichier à écrire: /home/helenew/init/.git/MERGE_MSG               (B[m[35;59H[?25l[35;51H[1K (B[0;7m[ Annulé ](B[m[K[36;17H(B[0;7m^O(B[m Écrire       (B[0;7m^W(B[m Chercher     (B[0;7m^K(B[m Couper       (B[0;7m^J(B[m Justifier    (B[0;7m^C(B[m Pos. cur.    (B[0;7m^Y(B[m Page préc.[37;2H(B[0;7mX(B[m Quitt[37;17H(B[0;7m^R(B[m Lire fich.   (B[0;7m^\(B[m Remplacer    (B[0;7m^U(B[m Coller       (B[0;7m^T(B[m Orthograp.   (B[0;7m^_(B[m Aller lig.   (B[0;7m^V(B[m Page suiv.[35d[?12l[?25h[3;24H[35d(B[0;7mÉcrire l'espace modifié ? (Répondre « Non » ABANDONNE les modifications.)                                       [36;1H O(B[m Oui[K[37d(B[0;7m N(B[m Non    [18G(B[0;7mC(B[m Annuler[K[35;74H[J[3
