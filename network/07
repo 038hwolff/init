@@ -1,1 +1,2 @@
-a faire sur mac de l'école: dig slash16.org
+#!/bin/sh
+nslookup slash16.org 8.8.8.8

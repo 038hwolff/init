@@ -1,1 +1,7 @@
-a faire sur mac de l'ecole: dig www.42.fr
+#Commande pour la reponse: nslookup 42.fr 
+Name:	42.fr
+Address: 10.52.1.11
+Name:	42.fr
+Address: 10.52.1.76
+Name:	42.fr
+Address: 10.52.1.12

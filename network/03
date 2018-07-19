@@ -1,1 +1,2 @@
-ifconfig -a
+#!/bin/sh
+ifconfig en1 | grep ether | tr -d "ether " | tr -d "	"

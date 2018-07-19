@@ -1,1 +1,8 @@
 #!/bin/sh
+(sudo apt-get update -y && sudo apt-upgrade -y) >> /var/log/update_script.log
+# can aussi be writter: sudo apt-get update -y > /var/log/update_script.log && sudo apt-upgrade -y >> /var/log/update_script.log
+#program once a week at 4 a.m.
+#Make sure this script is inside /usr/local/sbin, for example /user/local/sbin/02.
+#/usr/local/sbin is for root scripts, it's needed to execute sudo commands.
+#crontab -e
+#00 4 * * 1 root /bin/sh /usr/local/sbin/02

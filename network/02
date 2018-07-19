@@ -1,1 +1,2 @@
-ifconfig Ethernet
+#!/bin/sh
+ifconfig en0

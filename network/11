@@ -1,0 +1,4 @@
+name: nat-1\nip:   10.60.1.11
+
+# 'nat' = 'Network Address Translation'. nat1 is the device that makes 
+the link between local network and outside world

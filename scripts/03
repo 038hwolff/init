@@ -1,1 +1,4 @@
 #!/bin/sh
+ls -lhSr $1
+
+# -l : liste / -h : human readable / -S : sort par taille / -r : reverse

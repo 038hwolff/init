@@ -1,1 +1,1 @@
-route -n
+netstat -nr | grep default | cat -n | grep 1
